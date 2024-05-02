@@ -28,12 +28,9 @@ const chats: string[] = [];
  * @see https://gram.js.org/
  */
 async function handleMessages(event: NewMessageEvent) {
-  const channelId = event.message.chatId?.toString();
-  const channelUsername = (event.message.chat as { username: string }).username;
-  if (
-    (channelId && chats.includes(channelId)) ||
-    chats.includes(channelUsername)
-  ) {
+  const chatId = event.message.chatId?.toString();
+  const chatUsername = (event.message.chat as { username: string }).username;
+  if ((chatId && chats.includes(chatId)) || chats.includes(chatUsername)) {
     // Do something with the message
   }
 }
