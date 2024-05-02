@@ -1,4 +1,4 @@
-# Bun Telegram Chat Live Scraper
+# Bun Telegram Realtime Scraper
 
 This is a simple telegram chat scraper implementation using [Gram JS](https://gram.js.org/) and bun. Instead of being a one-time scraper, it actively listens to the chat in real-time. This can be useful if you need to continuously scrape information from telegram channels/groups for any purpose.
 
