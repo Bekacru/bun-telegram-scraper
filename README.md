@@ -12,5 +12,6 @@ This is a simple telegram chat scraper implementation using [Gram JS](https://gr
 4. Change .env.example to .env and fill the TELEGRAM_API_ID and TELEGRAM_API_HASH.
 5. Run the setup script to login: `bun setup login`
 6. Copy the session string and paste it in .env
-7. Run with watcher `bun dev`
-8. Run without watcher `bun start`
+7. Add list of chat ids or usernames in the chats array in index.ts.
+8. Run with watcher `bun dev`
+9. Run without watcher `bun start`
